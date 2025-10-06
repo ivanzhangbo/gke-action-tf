@@ -19,7 +19,7 @@ resource "random_string" "bucket_suffix" {
 }
 
 resource "google_storage_bucket" "gcs_bucket" {
-  name          = "${var.bucket_name}-${random_string.bucket_suffix.result}"
+  name          = "${var.bucket_name}-bbbbbbbbbbaaa"
   location      = var.location
   force_destroy = true # Set to false for production environments
 
